@@ -28,10 +28,15 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="bg-yellow-400 h-16 w-80 flex items-center justify-between p-6">
+        <div className="bg-yellow-400 h-16 w-80 flex items-center p-6 gap-6">
           <div className="bg-blue-400 h-12 w-12 flex items-center justify-center">Account</div>
           <div className="bg-blue-400 h-12 w-12 flex items-center justify-center">Cart</div>
-          <div className="bg-blue-400 h-12 w-12 flex items-center justify-center">login</div>
+          <button 
+          className="bg-sky-600 flex items-center justify-center rounded-2xl px-4 py-1 hover:bg-sky-700 active:bg-sky-600 cursor-pointer"
+          onClick={() => console.log('login')}
+          >
+            Login
+            </button>
         </div>
       </div>
     </>
