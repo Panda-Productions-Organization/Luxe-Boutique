@@ -5,14 +5,19 @@ import { RiSearchLine } from "react-icons/ri";
 const Header = () => {
   return (
     <>
-      <div className="bg-red-400 h-20 w-full flex items-center p-2">
-        <div className="bg-yellow-400 h-16 w-16 flex justify-center items-center">
-          <a href="/">Icon</a>
+      <div className="bg-red-400 h-20 w-full flex items-center justify-between p-2">
+        <div className="flex gap-6">
+          <div className="bg-yellow-400 h-16 w-16 flex justify-center items-center">
+            <a href="/">Icon</a>
+          </div>
+          <div className="bg-yellow-400 h-16 w-30 flex justify-center items-center">
+            <a href="/">Company name</a>
+          </div>
         </div>
 
-        <div className="bg-blue-400 h-16 w-100 ml-10 flex items-center">
+        <div className="bg-blue-400 h-16 w-200 ml-10 flex items-center">
           <div className="bg-white w-full h-12 rounded-4xl flex items-center pl-4">
-            <div className="flex items-center justify-center w-6 h-6">
+            <div className="flex items-center justify-center w-6 h-6 bg-amber-400 cursor-pointer" onClick={() => console.log('search')}>
               <RiSearchLine />
             </div>
             <input
@@ -21,6 +26,12 @@ const Header = () => {
               className="w-full h-full p-1 outline-none"
             />
           </div>
+        </div>
+
+        <div className="bg-yellow-400 h-16 w-80 flex items-center justify-between p-6">
+          <div className="bg-blue-400 h-12 w-12 flex items-center justify-center">Account</div>
+          <div className="bg-blue-400 h-12 w-12 flex items-center justify-center">Cart</div>
+          <div className="bg-blue-400 h-12 w-12 flex items-center justify-center">login</div>
         </div>
       </div>
     </>
