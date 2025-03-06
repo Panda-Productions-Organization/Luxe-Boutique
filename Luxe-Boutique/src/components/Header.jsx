@@ -46,18 +46,18 @@ const Header = () => {
         </div>
 
         <div className=" h-10 md:h-16 md:w-80 flex items-center p-2 md:p-6 gap-5 md:gap-6 ">
-          <div className=" flex items-center justify-center p-0.5 md:p-1 rounded-full">
+          <div className=" flex items-center justify-center p-0.5 md:p-1 rounded-full cursor-pointer">
             <FaRegCircleUser className="size-6 md:size-7 text-sky-950 rounded-full" />
           </div>
           <div className=" flex items-center justify-center p-0.5 md:p-1 rounded-full relative">
             <div className="absolute md:bottom-4 bottom-3 md:right-8 right-7 text-mx font-bold text-purple-700">
               0
             </div>
-            <RiShoppingCartLine className="size-6 md:size-7 text-sky-950" />
+            <RiShoppingCartLine className="size-6 md:size-7 text-sky-950 cursor-pointer" />
           </div>
 
           <button
-            className="bg-purple-600 flex items-center justify-center rounded-2xl px-4 py-1 hover:bg-purple-700 active:bg-purple-600 cursor-pointer"
+            className="bg-purple-600 text-white flex items-center justify-center rounded-2xl px-4 py-1 hover:bg-purple-700 active:bg-purple-600 cursor-pointer"
             onClick={() => console.log("login")}
           >
             Login
