@@ -21,18 +21,18 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="bg-blue-400 md:h-16 md:w-200 size-10 ml-10 flex items-center">
+        <div className="bg-blue-400 md:h-16 md:w-200 h-10 w-30 ml-10 flex items-center">
           <div className="bg-white w-full h-full md:h-12 md:rounded-4xl rounded-full flex items-center justify-center md:pl-4">
             <div
-              className="flex items-center justify-center size-full md:w-6 md:h-6 bg-amber-400 cursor-pointer"
+              className="hidden md:flex items-center justify-center w-6 h-6 bg-amber-400 cursor-pointer"
               onClick={() => console.log("search")}
             >
-              <RiSearchLine className="size-6 md:size-4" />
+              <RiSearchLine className="size-4" />
             </div>
             <input
               type="text"
-              placeholder="Search for Products, Brands and More"
-              className="w-full h-full p-1 outline-none hidden md:block"
+              placeholder="Search here..."
+              className="w-full h-full md:p-1 pl-2 outline-none"
             />
           </div>
         </div>
